@@ -12,7 +12,15 @@ const defaultState = {
   page2
 };
 
-const store = createStore(rootReducer, defaultState);
+// For Chrome Redux DevTools
+const enhancers = compose(
+    window.devToolsExtension ? window.devToolsExtension() : f => f
+);
+const store = createStore(rootReducer, defaultState, enhancers);
+
+// Without the Chrome Redux DevTools
+// const store = createStore(rootReducer, defaultState);
+
 export const history = syncHistoryWithStore(browserHistory, store);
 
 export default store;
