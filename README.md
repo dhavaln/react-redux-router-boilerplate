@@ -1,5 +1,5 @@
 # React Redux Router Boilerplate
-A simple Multi-page React, Redux, React-Router (with bunch of other stuff) boilerplate using create-react-app
+A simple Multi-page React, Redux, React-Router (with bunch of other stuff) boilerplate using [create-react-app](https://github.com/facebookincubator/create-react-app)
 
 # What's included
 
